@@ -6,7 +6,7 @@ import { GlobalStyle as GS} from './globalStyles';
 function App() {
   return (
     <Router>
-      <GS />
+      <GS /> 
       <Navbar />
     </Router>
   );
