@@ -1,3 +1,11 @@
+This is a food website redesign for my favorite restaurant here on the Northshore of Massachusetts
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
