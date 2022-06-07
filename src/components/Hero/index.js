@@ -24,7 +24,7 @@ const Hero = () => {
       <HeroContent> 
         <HeroItems> 
           <HeroH1>Bill & Bobs <br></br>Famous Roast <br></br>Beef</HeroH1>
-          <HeroP>Established 1966</HeroP>
+          <HeroP>Established 1968</HeroP>
           <HeroBtn>Menu</HeroBtn>
         </HeroItems>
       </HeroContent>
