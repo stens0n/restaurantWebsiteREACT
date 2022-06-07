@@ -3,6 +3,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import { GlobalStyle as GS} from './globalStyles';
 import Hero from './components/Hero';
 import {productData} from './components/Products/data';
+import Products from './components/Products';
 
 function App() {
   return (
