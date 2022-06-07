@@ -10,7 +10,7 @@ function App() {
     <Router>
       <GS /> 
       <Hero />
-      <Products heading='Choose Your Favorite' data={productData} />
+      <Products heading="Our Favorite's" data={productData} />
     </Router>
   );
 }
