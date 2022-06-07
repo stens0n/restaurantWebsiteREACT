@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../Navbar';
-import {HeroContainer,
+import Sidebar from '../Sidebar';
+import {
+        HeroContainer,
         HeroContent,
         HeroItems,
         HeroH1,
@@ -9,14 +11,21 @@ import {HeroContainer,
         } from './HeroElements';
 
 const Hero = () => {
+  const [ isOpen, setIsOpen ] = useState( false );
+
+  const toggle = () => {
+    setIsOpen( !isOpen )
+  }
+
   return (
     <HeroContainer>
-      <Navbar/>
+      <Navbar toggle={ toggle }/>
+      <Sidebar isOpen={ isOpen } toggle={ toggle }/>
       <HeroContent> 
         <HeroItems> 
-          <HeroH1>Greatest Food Ever</HeroH1>
-          <HeroP>Ready in minutes!</HeroP>
-          <HeroBtn>Place Order</HeroBtn>
+          <HeroH1>Bill & Bobs <br></br>Famous Roast <br></br>Beef</HeroH1>
+          <HeroP>Established 1966</HeroP>
+          <HeroBtn>Menu</HeroBtn>
         </HeroItems>
       </HeroContent>
 

@@ -16,12 +16,10 @@ export const HeroContent = styled.div`
     max-height: 100%;
     width: 100vw;
     padding: 0rem calc((100vq - 1300px) /2 );
+    
 `;
 
 export const HeroItems = styled.div`
-    @media and (max-width: 650px) {
-        width: 100%;
-    };
     font-weight: bold;
     line-height: 1;
     text-transform: uppercase;
@@ -34,5 +32,45 @@ export const HeroItems = styled.div`
     justify-content: center;
     flex-direction: column;
     display: flex;
+
+    @media and (max-width: 650px) {
+        width: 100%;
+    };
 `;
+
+
+export const HeroH1 = styled.h1`
+    font-size: clamp(2.5rem, 10vw);
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    box-shadow: 3px 5px #e9a23;
+    
+`;
+
+
+export const HeroP = styled.p`
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    margin-bottom: 2rem;
+    
+`;
+
+
+export const HeroBtn = styled.button`
+    font-size: 1.4rem;
+    padding: 1rem 4rem;
+    border: none; 
+    background: #e31837;
+    color: #fff;
+    transition: 0.229s ease-in-out;
+
+
+    &:hover { 
+        background: #ffc500;
+        transition: 0.2 ease-out;
+        cursor: pointer;
+        color: #000;
+
+    }
+`;
+
 
